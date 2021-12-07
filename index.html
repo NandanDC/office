@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Office Sweden AB</title>
   </head>
   <body>
     <div class="container-all">
-      <header class="logo">Logo</header>
+      <header class="header">
+        <h1>office<span class="reg-icon">®</span> </h1>
+      </header>
       <main>
         <section class="hero">
           <img
@@ -18,7 +21,37 @@
             alt="Background image"
             srcset=""
           />
-          <div class="overlay"></div>
+          <div class="overlay-left"></div>
+          <div class="overlay-right"></div>
+          <div class="hero-inner-container">
+            <div class="hero-item-left">
+              <div class="small-heading">INSPELAT WEBINAR</div>
+              <div class="large-heading"><h2>Framtidens digitala klinik</h2></div>
+            </div>
+            <div class="hero-item-right">
+              <form>
+                <div class="input-container">
+                  <label for="Name">Namn<span class="red-star"> *</span></label>
+                  <input type="text" name="Name" id="name-input">
+                </div>
+                <div class="input-container">
+                  <label for="Email">E-post<span class="red-star"> *</span></label>
+                  <input type="email" name="Email" id="email-input">
+                </div>
+                <div class="input-container">
+                  <label for="Company">Företag<span class="red-star"> *</span></label>
+                  <input type="text" name="Company" id="company-input">
+                </div>
+                <div class="input-container">
+                  <div class="g-recaptcha brochure__form__captcha captcha" data-sitekey="YOUR SITE KEY"></div>
+                </div>
+                <div class="input-container">
+                  <button class="btn">Anmäl dig här!</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
         </section>
         <section class="content">Content</section>
         <section class="attending">Attending</section>
@@ -26,7 +59,7 @@
         <section class="people-text">People</section>
         <section class="footer-upper">Footer upper</section>
       </main>
-      <footer class="footer-lower">Footer</footer>
+      <footer class="footer-lower"><h4> @ OFFICE SVERIGE AB </h4> <br> www.office.se  </footer>
     </div>
   </body>
 </html>
