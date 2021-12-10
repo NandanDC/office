@@ -6,91 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <title>Office Sverige AB</title>
+    <title>%%title%%</title>
   </head>
   <body>
     <div class="container-all">
-      <header class="header" pardot-region="Logo">
+      <header class="header">
         <h1>office<span class="reg-icon">®</span></h1>
       </header>
       <main>
         <section class="hero">
           <img
             class="hero-img"
-            src="./img/Office_webinar_3-20201.png"
+            src="https://storage.pardot.com/204862/1639050684Q69gr4Oc/Office_webinar_3_20201.png"
             alt="Background image"
             pardot-region="Hero Background Image"
           />
           <div class="overlay-left"></div>
           <div class="overlay-right"></div>
           <div class="hero-inner-container grid-1">
-            <div class="hero-item-left" pardot-region="Headline">
-              <div class="small-heading">INSPELAT WEBINAR</div>
+            <div class="hero-item-left">
+              <div class="small-heading" pardot-region="Headline">INSPELAT WEBINAR</div>
+              <p pardot-region="Message 1" style="color:white; text-align:left;margin-top:1rem">Missade du vårt kostnadsfria live-webinar</p>
               <div class="large-heading">
-                <h2>Framtidens digitala klinik</h2>
+                <h2>%%title%%</h2>
               </div>
+              <p style="color:white; text-align:left;margin-top:1rem" pardot-region="Message 2">- Här kan du se det i efterhand</p>
             </div>
             <div class="hero-item-right">
-              <form>
-                <div class="input-container">
-                  <label for="Name"
-                    >Förnamn<span class="red-star"> *</span></label
-                  >
-                  <input type="text" name="Firstname" id="first-name-input" />
-                </div>
-                <div class="input-container">
-                  <label for="Name"
-                    >Efternamn<span class="red-star"> *</span></label
-                  >
-                  <input type="text" name="Lastname" id="last-name-input" />
-                </div>
-                <div class="input-container">
-                  <label for="Email"
-                    >E-post<span class="red-star"> *</span></label
-                  >
-                  <input type="email" name="Email" id="email-input" />
-                </div>
-                <div class="input-container">
-                  <label for="Company"
-                    >Företag<span class="red-star"> *</span></label
-                  >
-                  <input type="text" name="Company" id="company-input" />
-                </div>
-                <div class="input-container">
-                  <div
-                    class="g-recaptcha brochure__form__captcha captcha"
-                    data-sitekey="YOUR SITE KEY"
-                  ></div>
-                </div>
-                <div class="input-container">
-                  <button class="btn">Anmäl dig här!</button>
-                </div>
-              </form>
+            %%content%%
             </div>
           </div>
         </section>
         <section class="content">
-          <div class="text-container" pardot-region="Content">
-            <p>
+          <div class="text-container">
+            <p pardot-region="Text 3">
               Tandvårdsindustrin är i snabb utveckling och förändring. Vi är på
               väg in i en ny era där gamla arbetssätt är på väg att ersättas med
               nya.
             </p>
             <h3 class="text-gray">
-              Hur förberedd är din klinik för framtiden?
+            %%description%%
             </h3>
-            <p>
+            <p pardot-region="Text 4">
               Missa inte detta webinar där vi har bjudit in Thomas Olsson,
               utbildare på Opus Dental, som tar dig från nutid till framtid och
               kommer visa nästa generations journalsystem baserat på 30 års
               erfarenhet inom tandvård.
             </p>
-            <p>
+            <p pardot-region="Text 5">
               Vi har även bjudit in
               <strong>Niklas Virta, vice VD på Aqua Dental</strong>, som kommer
               berätta om hur de har löst IT-tekniken på sina tretton kliniker.
             </p>
-            <p>I det här kostnadsfria webinaret går vi igenom:</p>
+            <p pardot-region="Text 6">I det här kostnadsfria webinaret går vi igenom:</p>
             <ul class="text-gray">
               <li>Nutid och framtid på kliniken.</li>
               <li>
@@ -99,7 +67,7 @@
               </li>
               <li>Opus Dentals kommande aktiviteter.</li>
             </ul>
-            <p>
+            <p pardot-region="Text 7">
               Du kommer även få tjuvkika på
               <a href="#">
                 Opus Dentals "hemligt" utvecklade, helt nya programvara.</a
@@ -109,11 +77,11 @@
               Fyll i formuläret högst upp på sidan så får du direkt tillgång
               till webinaret.
             </h4>
-            <p>
+            <p pardot-region="Text 8">
               Alla som anmäler sig till webinaret kommer få ett
               specialerbjudande.
             </p>
-            <p>
+            <p pardot-region="Text 9">
               <em class="text-small text-gray em"
                 >Du kan läsa mer om vårt erbjudande kring dental IT på
                 <a href="http://www.office.se/dental-IT"
@@ -123,8 +91,8 @@
             </p>
           </div>
         </section>
-        <section class="attending grid-1" pardot-region="Sub heading">
-          <h2 class="text-gray sub-heading" id="sub-heading">Medverkande</h2>
+        <section class="attending grid-1" >
+          <h2 class="text-gray sub-heading" id="sub-heading" pardot-region="Sub heading">Medverkande</h2>
         </section>
         <section class="people-images">
           <div class="grid-container grid-1">
@@ -133,7 +101,7 @@
                 <div pardot-region="Image 1">
                   <img
                     class="pic"
-                    src="./img/dybeck.png"
+                    src="https://storage.pardot.com/204862/1638965063yIp6cptr/dybeck.png"
                     alt="Christian Dybeck"
                     srcset=""
                   />
@@ -152,7 +120,7 @@
                 <div pardot-region="Image 2">
                   <img
                     class="pic"
-                    src="./img/Thomas_olsson.jpg"
+                    src="https://storage.pardot.com/204862/1638965080zZkF90fd/Thomas_olsson.jpg"
                     alt="Tomas Olsson"
                     srcset=""
                   />
@@ -174,17 +142,17 @@
                 <div pardot-region="Image 3">
                   <img
                     class="pic"
-                    src="./img/Tandlakare-Aqua-Dental-Niklas-Virta.jpg"
+                    src="https://storage.pardot.com/204862/1638965077HHKOLH6I/Tandlakare_Aqua_Dental_Niklas_Virta.jpg"
                     alt="Nicklas Virta"
                     srcset=""
                   />
                 </div>
-                <div class="pic-text text-gray" pardot-region="Image text 3">
-                  <strong>Nicklas Virta</strong> <br />
+                <div class="pic-text text-gray">
+                  <strong pardot-region="Image text 3">Nicklas Virta</strong> <br />
                   <div class="text-mini">
-                    <em>Vice VD på Aqua Dental</em>
+                    <em pardot-region="Title">Vice VD på Aqua Dental</em>
                   </div>
-                  <div class="text-mini">
+                  <div class="text-mini" pardot-region="Description">
                     Aqua Dental är en ISO-certifierad tandvårdskedja med tretton
                     kliniker i Stockholm och Göteborg. År 2015 arbetade här
                     drygt 30 medarbetare och i dag är de över 400 anställda,
@@ -202,7 +170,7 @@
           Office Sverige är certifierad Microsoft guldpartner.
         </section>
       </main>
-      <footer class="footer-lower" pardot-region="Lower footer">
+      <footer class="footer-lower">
         <h4>@ OFFICE SVERIGE AB</h4>
         <br />
         <a

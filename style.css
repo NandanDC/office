@@ -6,7 +6,7 @@
 }
 body {
   background-color: white;
-  width: 100vw;
+  width: fit-content;
   overflow-x: hidden;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -15,6 +15,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  overflow-x: hidden;
 }
 /***********************************/
 /***********The Grid****************/
@@ -50,12 +52,15 @@ h4 {
 }
 p {
   color: rgb(51, 51, 51);
-  padding: 1em 0 1em 2.5em;
+  padding: 1em 1em;
   width: 100%;
   line-height: 1.65;
 }
-p:first-of-type {
+.content p:first-of-type {
   padding-top: 3em;
+}
+form p:first-of-type {
+  padding-top: 2em;
 }
 li {
   margin-left: 4em;
@@ -70,6 +75,11 @@ li {
 #sub-heading {
   text-align: left;
   width: 100%;
+}
+.error, .errors {
+    margin:0;
+    padding:0;
+    color:red;
 }
 .text-bold {
   align-self: flex-start;
@@ -99,6 +109,9 @@ header {
   z-index: 100;
   width: 100vw;
   height: 92px;
+  width: fit-content;
+  overflow-x: hidden;
+  padding-right:2rem;
 }
 main {
   background-color: white;
@@ -188,8 +201,23 @@ input,
   border: none;
   margin-top: 0.5rem;
 }
+input[type=submit]{
+   background-color:rgb(241,137,3);
+   height:4em;
+   margin:0;
+   width:100%;
+   padding:0;
+   cursor:pointer
+}
+input[type=text]{
+   padding:1em;
+}
+p.submit{
+    padding:0;
+}
 .captcha {
   margin-top: 1em;
+  cursor:pointer;
 }
 iframe {
   width: 100%;
@@ -216,7 +244,7 @@ iframe {
   letter-spacing: 6px;
 }
 .large-heading {
-  height: 40%;
+  height: fit-content;
   text-align: left;
   padding-top: 2rem;
   padding-left: 1rem;
@@ -235,6 +263,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:1em;
 }
 .attending {
   height: 125px;
@@ -298,11 +327,27 @@ iframe {
   text-decoration: none;
   color: white;
 }
+.g-recaptcha {
+    margin-top:2rem;
+}
+.form-field {
+    margin:0;
+    padding:0;
+}
 @media screen and (max-width: 720px) {
   .hero {
-    height: 800px;
+    height: 1150px;
   }
   #sub-heading {
     text-align: center;
+  }
+  body{
+      overflow-x:hidden;
+  }
+  .container-all{
+      overflow-x:hidden;
+  }
+  h1{
+      margin-left:0;
   }
 }
