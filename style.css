@@ -57,6 +57,21 @@ p {
   width: 100%;
   line-height: 1.65;
 }
+
+form p {
+    color:white;
+}
+
+.message{
+    color:white;
+    text-align:left; 
+    margin-top:1em; 
+    padding:1em 1em 0 1em
+}
+.message:first-of-type{
+    margin-top:2em; 
+}
+
 .hero-img p {
     z-index: 0;
     object-fit: cover;
@@ -351,6 +366,12 @@ iframe {
     margin:0;
     padding:0;
 }
+@media screen and (max-width: 980px) {
+ 
+  h2{
+      font-size:2.4rem;
+  }
+}
 @media screen and (max-width: 720px) {
   .hero {
     height: 1300px;
@@ -366,5 +387,11 @@ iframe {
   }
   h1{
       margin-left:0;
+  }
+}
+@media screen and (max-width: 370px) {
+ 
+  h2{
+      font-size:2.2rem;
   }
 }
